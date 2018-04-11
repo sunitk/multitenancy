@@ -1,0 +1,29 @@
+########################################################################
+##### COPYRIGHT 2018 onwards - Sunit Katkar (sunitkatkar@gmail.com)
+########################################################################
+spring:
+  thymeleaf:
+    cache: false
+    mode: LEGACYHTML5
+  jpa:
+    database: mysql
+    show-sql: true 
+    generate-ddl: false
+    hibernate: 
+      ddl-auto: none  
+
+multitenancy: 
+  mtapp: 
+    dataSources: 
+      -
+        tenantId: tenant_1 
+        url: jdbc:mysql://localhost:3306/dbtenant1?useSSL=false 
+        username: tenant1 
+        password: admin123 
+        driverClassName: com.mysql.jdbc.Driver 
+      -
+        tenantId: tenant_2
+        url: jdbc:mysql://localhost:3306/dbtenant2?useSSL=false
+        username: tenant1
+        password: admin123
+        driverClassName: com.mysql.jdbc.Driver        
