@@ -27,3 +27,5 @@ and import as an Existing Maven project in your IDE.
 
 This project is licensed under the Apache License - see the [LICENSE.md](LICENSE.md) file for details
 
+## Request
+You are free to fork this repository, but please drop me a note at sunitkatkar@gmail.com
